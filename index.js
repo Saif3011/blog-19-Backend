@@ -1,6 +1,6 @@
 import express from 'express'
 import dbConnection from './databases/dbConnections.js'
-import userRouter from './src/middleware/modules/users/user.routes.js'
+import userRouter from './src/modules/users/user.routes.js'
 const app = express()
 const port = 3000
 

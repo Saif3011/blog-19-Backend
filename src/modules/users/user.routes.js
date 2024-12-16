@@ -3,7 +3,7 @@ import express from 'express'
 import { signUp } from './user.controller.js'
 
 
-userRouter = express.userRouter()
+const userRouter = express.Router()
 
 userRouter.post('/signUp',signUp)
 
