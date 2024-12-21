@@ -1,6 +1,7 @@
 import express from 'express'
 import dbConnection from './databases/dbConnections.js'
 import userRouter from './src/modules/users/user.routes.js'
+import notesRouter from './src/modules/notes/notes.routes.js'
 const app = express()
 const port = 3000
 
@@ -11,6 +12,7 @@ const port = 3000
 //Middleware
 app.use(express.json())
 app.use(userRouter)
+app.use('/notes',notesRouter)
 
 
 
